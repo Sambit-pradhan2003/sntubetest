@@ -28,23 +28,25 @@ function Test() {
         //   "email":"snd2003.com",
         //   "password":"12345"
         })
-        const count2=await response.json();
+        const count2=await response.data;
         setCount(count2);
+        console.log(count)
+        if(count!==undefined&&count!==null){
+          setlogedin(true)
+          console.log(loggedin)
+      }
+      
+      
+      if(loggedin){
+        navigate('/test1')
+      }
         
     } catch (error) {
         // console.log("error fetching data",error)
     }
   }
-  if(count!==undefined&&count!==null){
-    setlogedin(true)
-}
 
 
-if(loggedin){
-  navigate('/')
-}
-// console.log(count.data);
-console.log("clicked")
 
 
   const curentuser=async ()=>{
