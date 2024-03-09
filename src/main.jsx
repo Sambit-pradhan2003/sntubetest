@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {BrowserRouter as Router, Route , RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import {BrowserRouter as Routes, Route , RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Test from './Test.jsx'
 import Layout from './Layout.jsx'
 import Test1 from './Test1.jsx'
