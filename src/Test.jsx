@@ -1,6 +1,3 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Test() {
@@ -12,12 +9,19 @@ function Test() {
 
   return (
     <Link 
+<<<<<<< HEAD
     to='/test1'
      state={{data:dataToSend}}
     >
       Go to Component B
+=======
+      to='/test1'
+      state={{ data: dataToSend }}
+    >
+      Click Me
+>>>>>>> 85710c19424ef000d03aded3e942a423d79764cf
     </Link>
-    
+
   );
 }
 

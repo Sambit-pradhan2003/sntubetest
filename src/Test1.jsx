@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLocation } from 'react-router-dom';
 
 function Test1() {
@@ -6,7 +5,10 @@ function Test1() {
   let receivedData = state && state?.data;
   // console.log(state)
   // console.log(receivedData)
+<<<<<<< HEAD
   console.log(receivedData)
+=======
+>>>>>>> 85710c19424ef000d03aded3e942a423d79764cf
 
   return (
     <div>
