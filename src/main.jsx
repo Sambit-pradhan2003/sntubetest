@@ -5,6 +5,7 @@ import {BrowserRouter as Routes, Route , RouterProvider, createBrowserRouter, cr
 import Test from './Test.jsx'
 import Layout from './Layout.jsx'
 import Test1 from './Test1.jsx'
+import Videotest from './Videotest.jsx'
 
 
 
@@ -13,6 +14,7 @@ const router=createBrowserRouter(
       <Route path='/' element={<Layout/>}>
         <Route path='' element={<Test/>}/>
         <Route path='test1' element={<Test1/>}/>
+        <Route path='Videotest' element={<Videotest/>}/>
         {/* <Route path='user/:Userid' element={<User/>}/> */}
       </Route>
     )

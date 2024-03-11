@@ -11,10 +11,10 @@ function Test() {
   };
 
   return (
-    <Link to={{
-      pathname: '/test1',
-      state: { data: dataToSend }
-    }}>
+    <Link 
+    to='/test1'
+     state={{data:dataToSend}}
+    >
       Go to Component B
     </Link>
     
