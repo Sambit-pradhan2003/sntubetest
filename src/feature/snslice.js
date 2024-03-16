@@ -1,24 +1,25 @@
 import { createSlice,nanoid } from "@reduxjs/toolkit";
 
 const initialState={
-    todos:[{id:1,Text:'helloworld'}]
+    status:false,
+    userdata:null
 }
 
 
-export const todoslice=createSlice({
-    name :'todo',
+export const authSlice=createSlice({
+    name :'auth',
     initialState,
     reducers:{
-        addNumber:(state,action)=>{
-            {id:nanoid()
-                Text:action.payload}
-            state.todos.push(todo)
-        },
-        removenumber:()=>{
-
+    login: (state, action) => {
+        state.status = true;
+        state.userdata = action.payload.userdata;
+    },
+    logout: (state) => {
+        state.status = false;
+        state.userdata = null;
     }
     }
 })
 
-export const {addNumber,removenumber}=todoslice.actions
-export default todoslice.reducer
+export const {login,logout}=authSlice.actions
+export default authSlice.reducer

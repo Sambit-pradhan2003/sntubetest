@@ -1,28 +1,34 @@
 import { Link } from 'react-router-dom';
+import { useDispatch,useSelector } from 'react-redux'
 
 function Test() {
+
+
   const dataToSend = {
     key1: 'value1',
     key2: 'value2',
     // Add other data properties as needed
   };
+  
+  const x =useSelector(state=>state.status)
+  
+  const y=useSelector(state=>state. userdata)
+  console.log("at x,",x)
+  console.log("at y",y)
 
   return (
+    <>
     <Link 
-<<<<<<< HEAD
+
     to='/test1'
      state={{data:dataToSend}}
     >
       Go to Component B
-=======
-      to='/test1'
-      state={{ data: dataToSend }}
-    >
-      Click Me
->>>>>>> 85710c19424ef000d03aded3e942a423d79764cf
+
     </Link>
+    
+    </>
 
   );
 }
-
 export default Test;
